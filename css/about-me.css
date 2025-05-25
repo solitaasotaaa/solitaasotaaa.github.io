@@ -1,0 +1,73 @@
+h1{
+            font-size: 45px;
+            color: #fef7f7;
+            text-align: center;
+            background-color: #e090b5;
+        }
+        .Kitty-Image {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .Melody-Image {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }   
+
+        .Intro{
+            text-align: center;
+            font-size: 20px;
+            color: #333;
+            margin: 20px auto;
+            width: 90%;
+        }
+
+        div{
+            margin: auto;
+            width: 80%;
+            padding: 2px;
+            text-align: center;
+        }
+    
+        
+        table, th, td {
+            border: 2px solid rgb(131, 76, 121);
+            border-collapse: collapse;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+        th {
+            background-color: #e090b5;
+            color: #fff;
+        }
+        nav {
+            background-color: #e090b5;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            border-radius: 20px 20px 0 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
