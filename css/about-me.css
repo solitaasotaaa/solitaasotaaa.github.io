@@ -1,3 +1,13 @@
+@media (max-width: 600px) {
+    .custom-class {
+        font-size: 12px;
+    }
+    .Kitty-Image, .Melody-Image {
+        width: 100%;
+        height: auto;
+    
+    }
+}
 h1{
             font-size: 45px;
             color: #fef7f7;

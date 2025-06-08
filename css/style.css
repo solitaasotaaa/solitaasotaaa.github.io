@@ -1,4 +1,19 @@
-nav {
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .Kitty-Image, .Melody-Image {
+        width: 100%;
+        height: auto;
+    }
+    table {
+        width: 100%;
+    }
+}
+    nav {
             background-color: #e090b5;
             padding: 10px;
             text-align: center;
