@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (min-width: 576px) {
     .custom-class {
         font-size: 12px;
     }
