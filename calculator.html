@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <style>
-      .container {
+      /* container ng class, input, button tag tmd, result men tag eh, vea jea id*/
+      .container { 
         margin: 50px auto;
         width: 300px;
         text-align: center;
@@ -28,7 +29,12 @@
   <body>
     <div class="container">
       <input type="number" id="num1" placeholder="First num" />
-      +
+      <select id="operation">
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+      </select>
       <input type="number" id="num2" placeholder="Second num" />
       <button onclick="calculate()">=</button>
       <span id="result"></span>
@@ -37,7 +43,23 @@
       function calculate() {
         const num1 = parseFloat(document.getElementById("num1").value);
         const num2 = parseFloat(document.getElementById("num2").value);
-        const result = num1 + num2;
+        const op = document.getElementById("operation").value;
+        let result;
+        switch (op) {
+          case "+":
+            result = num1 + num2;
+            break;
+          case "-":
+            result = num1 - num2;
+            break;
+          case "*":
+            result = num1 * num2;
+            break;
+          case "/":
+            result = num2 !== 0 ? num1 / num2 : "Error";
+            break;
+            /* ? if and : else shortcut*/
+        }
         document.getElementById("result").textContent = result;
       }
     </script>

@@ -4,13 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        body {
+            background: #ffe4ec; /* Pink background */
+            color: #333;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 480px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(214,51,132,0.08);
+            padding: 36px 32px 32px 32px;
+        }
+        .header-bg {
+            background: linear-gradient(90deg, #ffe4ec 0%, #ffd6ef 100%);
+            padding: 28px 0 18px 0;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            margin: -36px -32px 28px -32px;
+        }
+        h1 {
+            color: #e75480;
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+        .desc {
+            text-align: center;
+            margin-bottom: 22px;
+            color: #6c757d;
+            font-size: 1.08em;
+        }
+        .contact-list {
+            background: #fff0f6;
+            padding: 18px 22px;
+            border-radius: 8px;
+            list-style: none;
+            margin: 0 0 22px 0;
+            font-size: 1.04em;
+        }
+        .contact-list li {
+            margin-bottom: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-list li:last-child {
+            margin-bottom: 0;
+        }
+        .contact-label {
+            min-width: 80px;
+            font-weight: 600;
+            color: #d63384;
+        }
+        a {
+            color: #d63384;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .info {
+            margin-top: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 0.98em;
+            color: #444;
+        }
+        .info strong {
+            color: #e75480;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact Me</h1>
-    
-    <p>If you have any questions or just want to say hi, feel free to reach out!</p>
-    <ul>
-        <li>Email: <a href="mailto:solitathearos@gmail.com">solitathearos@gmail.com</a></li>
-        <li>Phone: <a href="tel:+855 85 629 599">+855 85 629 599</a></li>
+    <h1 style="text-align:center; color:#e75480; margin-top:40px;">Contact Me</h1>
+    <div class="container">
+        <div class="header-bg" style="display:none;">
+            <!-- h1 moved above -->
+        </div>
+        <div class="desc">
+            I’m happy to connect! Please use any of the methods below to get in touch&lt;3
+        </div>
+        <ul class="contact-list">
+            <li><span class="contact-label">Email:</span> <a href="mailto:solitathearos@gmail.com">solitathearos@gmail.com</a></li>
+            <li><span class="contact-label">Phone:</span> <a href="tel:+85585629599">+855 85 629 599</a></li>
+            <!-- <li><span class="contact-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li> -->
+            <li><span class="contact-label">GitHub:</span> <a href="https://github.com/solitaasotaaa" target="_blank">solitaasotaaa</a></li>
+        </ul>
+        <div class="info">
+            <div><strong>Location:</strong> Phnom Penh, Cambodia</div>
+            <div><strong>Available:</strong> Monday - Friday, 9am - 6pm</div>
+            <div><strong>Languages:</strong> English, Khmer</div>
+        </div>
+    </div>
 </body>
 </html>
