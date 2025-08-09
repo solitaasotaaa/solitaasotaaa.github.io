@@ -177,4 +177,48 @@ footer {
   transform: translateY(0);
 
 }
+/* Style the navigation menu */
+.navbar-custom {
+  background-color: #e090b5;
+  padding: 14px 0;
+  text-align: center;
+  position: fixed; /* Change from sticky to fixed */
+  top: 0;
+  width: 100%; /* Make it full width */
+  z-index: 1000;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.navbar-custom #navbar {
+  display: none;
+}
+
+/* Style navigation menu links */
+.navbar-custom a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.navbar-custom a.icon {
+  background: #e090b5;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.navbar-custom a:hover {
+  background-color: #e090b5;
+  color: #d63384;
+}
+
+
 
